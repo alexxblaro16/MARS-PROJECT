@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    
+     margin: 0;
+    padding: 0;
+}
+div{
+    color: rgb(255, 0, 0);
+}
+h1{
+  font-size:3rem;
+  margin-top:45vh;
+  color:white;
+  font-family: 'Merienda', cursive;
+  animation-name:glow;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  text-align: center;
+  justify-content: center;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #ff0000,0px 0px 5px #ffffff;}
+  to{text-shadow:0px 0px 20px #ff0000,0px 0px 20px #ffffff;}
+}
+
+body, html{
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+.container{
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: justify;
+}
+.center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.go-back-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.go-back-btn:hover{
+    background-color: darkred;
+}
+.bottom-image{
+   position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    opacity:0.3;
+    z-index:0;
+    pointer-events: none;
+}   
